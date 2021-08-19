@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Web Paint</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1> Paint your own picture</h1>
+  
+<p>
+Set Width: <input type="text" id="setW">
+Set Height: <input type="text" id="setH"> 
+<input type="button" value="Set" id="setWxH" onclick="setCanvasSize()">
+</p>
+
+<canvas id="canvas1" onmousedown="startPainting(event.offsetX, event.offsetY)" onmouseup="stopPainting()">
+</canvas>
+
+<p> 
+  Bush color: <input type="color" id="clrIP" value="#000" onchange="changeColor(this.value)"> </input>
+
+  Brush size: <input type="range" id="slider" min="1" max="50" value="3" onchange="resizeBrush(this.value)"> </input>
+
+<output id="sizeOutput">3</output>
+</p>
+
+<p>
+  <input type="button" value="Clear canvas" onclick="clearCanvas()"></input>
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

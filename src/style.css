@@ -1,0 +1,15 @@
+h1 {
+  font-family: arial;
+  font-size: 25px
+}
+
+p {
+  font-family: arial;
+  font-size: 15px
+}
+
+canvas {
+  border: 5px solid;
+  border-radius: 5px;
+  margin: 10px;
+}
